@@ -24,12 +24,10 @@
 (defn home-page 
   []
   (page/html5
-   (page-head "Home")
-   header-links
-   [:h1 "Home"]
-   [:p "Webapp To-Do-List."]
-   [:h2 "Hi Paul "])
-)
+    (page-head "Home")
+    header-links
+    [:h2 "Hi Paul"])
+  )
 
 (defn add-task-page
   []
