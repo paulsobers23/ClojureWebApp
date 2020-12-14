@@ -1,0 +1,13 @@
+# Default pipeline from cli
+steps:
+- command: script/test
+  label: "Test"
+  timeout_in_minutes: 3
+  
+- wait
+
+- command: buildkite-agent pipeline upload
+  label: "Build"
+  branches: master
+  timeout_in_minutes: 3
+
